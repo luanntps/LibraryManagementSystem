@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity"
+    android:background="@color/dark_ocean"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="30dp">
+    <include layout="@layout/layout_introduction"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="180dp"
+                        android:src="@mipmap/librarian"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30dp"
+                        android:textColor="@color/light_ocean"
+                        android:text="Đăng nhập"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="20dp"
+                        />
+                    <include layout="@layout/layout_login_form" />
+                <TextView
+                    android:id="@+id/forgetPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:text="Quên mật khẩu?"
+                    android:textColor="@color/light_ocean"
+                    />
+                <TextView
+                    android:id="@+id/btnLogin"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="ĐĂNG NHẬP"
+                    android:textColor="@color/light_ocean"
+                    android:textSize="20dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@drawable/button"/>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

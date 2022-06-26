@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_dialog"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa thủ thư"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/tvEditUserId"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:hint="Mã số thủ thư"
+        android:textAlignment="center"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/light_ocean"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtEditUserName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Tên thủ thư"
+            android:textAlignment="center"
+            android:background="@color/light_ocean"
+            android:gravity="center"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:counterEnabled="true"
+        app:counterMaxLength="13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:passwordToggleEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvEditUserPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/light_ocean"
+            android:gravity="center"
+            android:hint="Mật khẩu"
+
+            android:inputType="textPassword"
+            app:passwordToggleTintMode="screen"
+            android:paddingStart="40dp"
+            android:paddingLeft="20dp"
+            android:textAlignment="center"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/tvEditLibrarianRoleName"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:text="Chọn vai trò"
+        android:paddingStart="80dp"
+        android:paddingEnd="100dp"
+        android:clickable="true"
+        android:background="@drawable/for_result_button"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_add"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="CANCEL"
+            android:textColor="@color/light_ocean"
+            android:textSize="20dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="@drawable/button"/>
+        <TextView
+            android:id="@+id/btnOkay"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="40dp"
+            android:text="OKAY"
+            android:textColor="@color/light_ocean"
+            android:textSize="20dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+</LinearLayout>

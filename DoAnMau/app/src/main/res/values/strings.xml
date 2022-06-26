@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PhuongNamLib</string>
+    <string name="menu_open">Open</string>
+    <string name="menu_close">Close</string>
+    <string name="forgot_password_title">Quên mật khẩu?</string>
+    <string name="forgot_password_content">Vui lòng liên hệ người quản lý để được hỗ trợ đổi mật khẩu</string>
+    <string name="no_connection_title">Không có kết nối?</string>
+    <string name="no_connection_content">Bạn có thể truy cập chế độ offline với tài khoản và mật khẩu của lần đăng nhập gần nhất</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

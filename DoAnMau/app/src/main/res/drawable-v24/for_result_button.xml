@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/ocean"
+    >
+    <item android:drawable="@drawable/shape_for_result_button"/>
+    <item android:id="@android:id/mask" >
+        <shape>
+            <solid android:color="@color/light_ocean" />
+            <corners
+                android:radius="60dp"
+                >
+            </corners>
+        </shape>
+    </item>
+</ripple>

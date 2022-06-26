@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.TopBorrowedFragment"
+    android:clickable="true"
+    android:id="@+id/cdl"
+    >
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:fitsSystemWindows="true"
+        android:background="@color/light_ocean"
+        android:id="@+id/appbar"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            android:id="@+id/collapsingToolBar">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Chạm vào để hiện biểu đồ"
+                    android:background="@color/light_ocean"
+                    android:gravity="center"
+                    android:id="@+id/touchToShow"
+                    android:clickable="true"
+                    />
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/piechart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="asdasdasd"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:focusedByDefault="true"
+                    android:focusableInTouchMode="true"
+                    android:fitsSystemWindows="true"
+                    android:layout_margin="10dp"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_ocean"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <include layout="@layout/layout_top10"></include>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

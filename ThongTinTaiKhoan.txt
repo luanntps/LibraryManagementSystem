@@ -1,0 +1,7 @@
+Chức năng admin
+ID: admin
+password: admin
+
+chức năng user
+ID: ps19425
+password: 123456

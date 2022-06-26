@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_login_form"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/button_left_deep_ocean"
+            android:text="Phương Nam Library"
+            android:textColor="@color/light_ocean"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_person"/>
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:hint="Nhập tài khoản"
+            android:background="@drawable/box_input"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock"/>
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:hint="Nhập mật khẩu"
+            android:inputType="textPassword"
+            android:background="@drawable/box_input"
+            android:drawableEnd="@drawable/ic_eye"
+            >
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

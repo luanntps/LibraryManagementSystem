@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/shape_rcv_item"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+
+    >
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:id="@+id/tvIdCallcard"
+        android:layout_marginLeft="30dp"
+        />
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Người mượn: "/>
+            <TextView
+                android:id="@+id/tvIdMemberCallcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00001"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvBookNameCallcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="spderman into spider verse"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Người tạo: "/>
+            <TextView
+                android:id="@+id/tvIdLibrarianCallcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00001"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/tvBeginDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:text="22-05-2022"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvExpiredsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:text="22-05-2022"/>
+    </LinearLayout>
+</LinearLayout>

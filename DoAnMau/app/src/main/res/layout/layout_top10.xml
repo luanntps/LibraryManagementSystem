@@ -1,0 +1,29 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_top10"
+    app:behavior_hideable="true"
+    app:contentScrim="?attr/colorPrimary"
+    app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:clickable="true"
+    android:background="@color/light_ocean"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/tvOpenTop10"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Top 10 sách được thuê nhiều nhất"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rcvTop10"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>

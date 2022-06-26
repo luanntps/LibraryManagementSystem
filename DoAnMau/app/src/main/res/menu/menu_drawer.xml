@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Quản lý">
+            <menu>
+                <group>
+                    <item android:title="Quản lý phiếu mượn" android:id="@+id/nav_callcard"
+                        android:icon="@drawable/ic_home"/>
+                    <item android:title="Quản lý sách" android:id="@+id/nav_book"
+                        android:icon="@drawable/ic_book"/>
+                    <item android:title="Quản lý loại sách" android:id="@+id/nav_type"
+                        android:icon="@drawable/ic_type"/>
+                    <item android:title="Quản lý thành viên" android:id="@+id/nav_member"
+                        android:icon="@drawable/ic_member"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Thống kê">
+            <menu>
+                <group>
+                    <item android:title="10 sách mượn nhiều nhất" android:id="@+id/nav_top10"
+                        android:icon="@drawable/ic_piechart"/>
+                    <item android:title="Doanh thu theo tháng" android:id="@+id/nav_revenue_month"
+                        android:icon="@drawable/ic_chart"/>
+                    <item android:title="Doanh thu theo năm" android:id="@+id/nav_revenue_year"
+                        android:icon="@drawable/ic_chart"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Người dùng">
+            <menu>
+                <group>
+                    <item android:title="Đổi mật khẩu" android:id="@+id/nav_change_password"
+                        android:icon="@drawable/ic_lock"/>
+                    <item android:title="Đăng xuất " android:id="@+id/nav_logout"
+                        android:icon="@drawable/ic_logout"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>
